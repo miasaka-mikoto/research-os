@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Portable source-checkout launcher.  The Linux release includes this file so
+# a cloud agent can call the JSON interface without knowing Python module paths.
+set -euo pipefail
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+PROJECT_ROOT="$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
+cd "$PROJECT_ROOT"
+exec "$PYTHON_BIN" -m researchos.agent_cli --workspace "${RESEARCHOS_WORKSPACE:-$PROJECT_ROOT/workspace_data/researchos.sqlite3}" "$@"

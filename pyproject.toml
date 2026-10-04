@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "research-os"
-version = "0.1.0"
+version = "0.2.0"
 description = "Research OS — a local, durable graph workspace for personal research"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,6 +13,7 @@ dependencies = []
 
 [project.scripts]
 researchos = "researchos.app:main"
+researchos-agent = "researchos.agent_cli:main"
 
 [tool.setuptools]
 packages = ["researchos"]

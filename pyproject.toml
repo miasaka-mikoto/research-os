@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-os"
+version = "0.1.0"
+description = "Research OS — a local, durable graph workspace for personal research"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Research OS contributors"}]
+dependencies = []
+
+[project.scripts]
+researchos = "researchos.app:main"
+
+[tool.setuptools]
+packages = ["researchos"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

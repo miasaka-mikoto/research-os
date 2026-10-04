@@ -1,0 +1,18 @@
+{
+  "artifacts": 4,
+  "claims": 10,
+  "concepts": 3,
+  "datasets": 3,
+  "decisions": 2,
+  "entities": 49,
+  "evidences": 4,
+  "experiments": 4,
+  "hypotheses": 3,
+  "ideas": 2,
+  "papers": 5,
+  "questions": 3,
+  "relations_added": 55,
+  "results": 4,
+  "tasks": 2,
+  "workspace": "Agent Memory Research Demo"
+}

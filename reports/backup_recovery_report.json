@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scenario": "seed -> online backup -> restore into a second workspace -> integrity check",
+  "source_entities": 51,
+  "restored_entities": 51,
+  "source_relations": 55,
+  "restored_relations": 55,
+  "integrity": "ok",
+  "notes": "Validated by tests/test_demo.py and scripts/verify_demo.py"
+}

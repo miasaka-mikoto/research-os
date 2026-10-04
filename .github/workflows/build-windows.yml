@@ -1,0 +1,28 @@
+name: Windows executable
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Build ResearchOS.exe
+        shell: pwsh
+        run: .\scripts\build_windows.ps1
+
+      - name: Upload Windows build
+        uses: actions/upload-artifact@v4
+        with:
+          name: ResearchOS-windows
+          path: dist/ResearchOS
+          if-no-files-found: error

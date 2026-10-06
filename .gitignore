@@ -9,6 +9,8 @@ build/
 *.spec
 *.db
 *.db-*
+*.sqlite3
+*.sqlite3-journal
 workspace_data/
 backups/
 screenshots/generated/

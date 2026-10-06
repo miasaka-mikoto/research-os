@@ -20,3 +20,12 @@ python -m researchos.app --workspace demo_workspace/agent_memory_research_demo.s
 
 All claims and results are synthetic examples for testing graph provenance;
 they are not empirical findings.
+
+## Note
+
+`agent_memory_research_demo.sqlite3` is intentionally not committed to the repository.
+Generate it locally with:
+
+```bash
+python scripts/seed_demo.py
+```
